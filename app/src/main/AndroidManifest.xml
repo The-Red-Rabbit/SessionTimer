@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sessiontimer">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FiBuSteuernDay">
+        <activity
+            android:name="com.example.sessiontimer.PrefsActivity"
+            android:label="@string/button_settings"
+            android:parentActivityName="com.example.sessiontimer.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sessiontimer.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sessiontimer.StatsActivity"
+            android:label="@string/button_stats"
+            android:parentActivityName="com.example.sessiontimer.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sessiontimer.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sessiontimer.SettingsActivity"
+            android:configChanges="locale|orientation"
+            android:parentActivityName="com.example.sessiontimer.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sessiontimer.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sessiontimer.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

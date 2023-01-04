@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Learn Session Timer</string>
+    <string name="button_start">Los</string>
+    <string name="button_stop">Halt</string>
+    <string name="add_to_gcal">Hinz. zu Kalender</string>
+    <string name="button_settings">Einstellungen</string>
+    <string name="button_stats">Statistiken</string>
+    <string name="calendars_header">Kalender</string>
+    <string name="lang_header">Sprache</string>
+    <string name="title_chooseCalAcc">Bitte Kalender-Account wählen</string>
+    <string name="theme_entry_sysdefault">Systemstandart</string>
+    <string name="gen_choose">wähle</string>
+    <string name="theme_choose">Theme wählen</string>
+    <string name="lang_choose">Sprache wählen</string>
+    <string name="title_noPermissionGiven">Die App funktioniert ohne die benötigten Berechtigungen nicht</string>
+    <string name="title_noGoogleAccount">Die App funktioniert ohne Google Kalender Account nicht</string>
+</resources>
